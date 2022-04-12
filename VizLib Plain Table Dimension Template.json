@@ -1,0 +1,332 @@
+      {
+        "qLibraryId": "",
+        "qDef": {
+          "qGrouping": "N",
+          "qFieldDefs": [
+            "=$(=$(vDimName(##INDEX##)))"
+          ],
+          "qFieldLabels": [
+            ""
+          ],
+          "qSortCriterias": [
+            {
+              "qSortByState": 0,
+              "qSortByFrequency": 0,
+              "qSortByNumeric": 1,
+              "qSortByAscii": 1,
+              "qSortByLoadOrder": 1,
+              "qSortByExpression": 0,
+              "qExpression": {
+                "qv": ""
+              },
+              "qSortByGreyness": 0
+            }
+          ],
+          "qNumberPresentations": [],
+          "qReverseSort": false,
+          "qActiveField": 0,
+          "qLabelExpression": "='$(=$(vDimLabel(##INDEX##)))'",
+          "autoSort": true,
+          "cId": "##cId##",
+          "othersLabel": "Others",
+          "showDimension": false,
+          "qShowHide": "",
+          "autoLabel": true,
+          "labelExpression": "",
+          "labelDrillDownArray": [],
+          "useTitleTooltip": false,
+          "titleTooltipMode": true,
+          "tooltipCustomValue": "",
+          "tooltipColor": "#595959",
+          "useCellTooltip": false,
+          "cellTooltipMode": true,
+          "showIcons": false,
+          "icon": "fa-table",
+          "iconColor": "#000000",
+          "iconPosition": 0,
+          "titleTextAlignmentMode": false,
+          "titleTextAlignment": "left",
+          "titleColorType": "standard",
+          "titleColor": "",
+          "titleBGColor": "",
+          "adjustColumnWidth": false,
+          "columnWidth": 200,
+          "columnWidthSlider": 200,
+          "dimNullValueColorsAuto": true,
+          "fontStyle": "",
+          "dropshadow": false,
+          "textAlignment": "left",
+          "textVerticalAlignment": "center",
+          "useCellCustomCSS": false,
+          "showBorder": true,
+          "borderColor": "#F2F2F2",
+          "borderThickness": 1,
+          "dimsearchenabled": true,
+          "pincolumn": false,
+          "columnPinningPosition": "pinLeft",
+          "columnPinning": "noPin",
+          "enableSelection": true,
+          "actions": [],
+          "disableMerge": false,
+          "textColorPicker": {
+            "color": "#595959",
+            "index": -1
+          },
+          "tooltipColorPicker": {
+            "color": "#595959",
+            "index": -1
+          },
+          "cellTooltipColorPicker": {
+            "color": "#595959",
+            "index": -1
+          },
+          "iconColorPicker": {
+            "color": "#000000",
+            "index": -1
+          },
+          "backgroundColorPicker": {
+            "color": "none",
+            "index": -1
+          },
+          "dimNullValueBgColorPicker": {
+            "color": "none",
+            "index": -1
+          },
+          "dimNullValueColorPicker": {
+            "color": "none",
+            "index": -1
+          },
+          "borderColorPicker": {
+            "color": "#F2F2F2",
+            "index": -1
+          }
+        },
+        "qNullSuppression": false,
+        "qIncludeElemValue": false,
+        "qOtherTotalSpec": {
+          "qOtherMode": "OTHER_OFF",
+          "qOtherCounted": {
+            "qv": "10"
+          },
+          "qOtherLimit": {
+            "qv": "0"
+          },
+          "qOtherLimitMode": "OTHER_GE_LIMIT",
+          "qSuppressOther": false,
+          "qForceBadValueKeeping": true,
+          "qApplyEvenWhenPossiblyWrongResult": true,
+          "qGlobalOtherGrouping": false,
+          "qOtherCollapseInnerDimensions": false,
+          "qOtherSortMode": "OTHER_SORT_DESCENDING",
+          "qTotalMode": "TOTAL_OFF",
+          "qReferencedExpression": {
+            "qv": ""
+          }
+        },
+        "qShowTotal": false,
+        "qShowAll": false,
+        "qOtherLabel": {
+          "qv": "Others"
+        },
+        "qTotalLabel": {
+          "qv": ""
+        },
+        "qCalcCond": {
+          "qv": ""
+        },
+        "qAttributeExpressions": [
+          {
+            "qExpression": "",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "'#595959'",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          }
+        ],
+        "qAttributeDimensions": [],
+        "qCalcCondition": {
+          "qCond": {
+            "qv": "if(GetSelectedCount(%DimensionLabel)>0 and SubStringCount('['&Concat(%DimensionName, '],[')&']', '$(=$(vDimName(##INDEX##)))'), True(), False())"
+          },
+          "qMsg": {
+            "qv": ""
+          }
+        }
+      }

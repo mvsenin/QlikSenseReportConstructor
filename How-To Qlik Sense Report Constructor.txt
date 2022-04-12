@@ -1,0 +1,32 @@
+1. fill report constructor data
+	- dimensions: %DimensionName, %DimensionLabel
+	- measures: %MeasureName, %MeasureLabel, %MeasureExpression
+2. generate and copy jsons for the following Qlik Sense objects:
+	- VizLib plain table
+3. open you app and add "/options/developer" to the very end of the URLs
+	- add Qlik Sense objects:
+		- fileter with %DimensionLabel field
+		- filter with %MeasureLabel field
+		- VizLib plain table
+	- call context menu Developer > Properties of the VizLib plain table
+	- paste copied properties to the text box
+	- press Close
+4. now your table should show dimensions and measures according to selections made in the filters added on the step 3
+
+Notes:
+- properties generation logic should be checked against other object types and might need changes
+
+- - -
+
+%DimensionName	%DimensionLabel
+DealID	Deal ID
+Name	Deal Name
+DealTeam	Deal Team
+DealType	Deal Type
+Status	Satus
+Due	Due Date
+Region	Region
+
+
+%MeasureName	%MeasureLabel	%MeasureExpression
+DealSubtype	# subtypes	Count(DealSubtype)

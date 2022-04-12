@@ -1,0 +1,457 @@
+      {
+        "qLibraryId": "",
+        "qDef": {
+          "qLabel": "",
+          "qDescription": "",
+          "qTags": [],
+          "qGrouping": "N",
+          "qDef": "=$(=$(vMeaExpr(##INDEX##)))",
+          "qNumFormat": {
+            "qType": "U",
+            "qnDec": 10,
+            "qUseThou": 0,
+            "qFmt": "",
+            "qDec": "",
+            "qThou": ""
+          },
+          "qRelative": false,
+          "qBrutalSum": false,
+          "qAggrFunc": "",
+          "qAccumulate": 0,
+          "qReverseSort": false,
+          "qActiveExpression": 0,
+          "qExpressions": [],
+          "qLabelExpression": "='$(=$(vMeaLabel(##INDEX##)))'",
+          "autoSort": true,
+          "cId": "##cId##",
+          "numFormatFromTemplate": true,
+          "negativeFormat": "symbol",
+          "customAbbreviation": false,
+          "showMeasure": false,
+          "qShowHide": "",
+          "labelExpression": "",
+          "useTitleTooltip": false,
+          "titleTooltipMode": true,
+          "tooltipCustomValue": "",
+          "tooltipColor": "#595959",
+          "useCellTooltip": false,
+          "cellTooltipMode": true,
+          "showIcons": false,
+          "icon": "fa-table",
+          "iconColor": "#000000",
+          "iconPosition": 0,
+          "titleTextAlignmentMode": true,
+          "titleTextAlignment": "right",
+          "titleColorType": "standard",
+          "titleColor": "",
+          "titleBGColor": "",
+          "adjustColumnWidth": false,
+          "columnWidth": 200,
+          "columnWidthSlider": 200,
+          "measureNullValueColorsAuto": true,
+          "fontStyle": "",
+          "dropshadow": false,
+          "textAlignment": "right",
+          "textVerticalAlignment": "center",
+          "useCellCustomCSS": false,
+          "cellRepresentation": "text",
+          "useHTML": false,
+          "useURL": false,
+          "useIndicators": false,
+          "iconPositive": "fa-arrow-up",
+          "iconPositiveColor": "#3C43B7",
+          "iconNegative": "fa-arrow-down",
+          "iconNegativeColor": "#F93F17",
+          "iconZero": "fa-arrow-left",
+          "iconZeroColor": "#898989",
+          "indicatorShowValue": true,
+          "indicatorvalue": 0,
+          "progressIsHeightCustom": false,
+          "progressHeight": 20,
+          "progressMaxIsDynamic": true,
+          "progressMinFixedValue": -100,
+          "progressMaxFixedValue": 100,
+          "progressBarCustomColors": false,
+          "supportNegativeBars": true,
+          "progressBarUseRemainingColor": false,
+          "progressBarRemainingColor": "#000000",
+          "progressBarShowValue": false,
+          "useBulletchart": false,
+          "showDataLabel": false,
+          "bulletchartIsHeightCustom": false,
+          "bulletchartHeight": 20,
+          "bulletchartCustomAppearance": false,
+          "bulletTargetWidth": 3,
+          "useSparkline": false,
+          "sparklineDimension": "Date",
+          "sparklineDimension2": "Date",
+          "sparklineCompositeLinechartMeasure": "",
+          "sparklineTimeaware": false,
+          "sparklineTimestretch": false,
+          "sparklineType": "line",
+          "sparklinesIsHeightCustom": false,
+          "sparklinesHeight": 20,
+          "sparklinesMultiline": [],
+          "sparklineUseCustomStyling": false,
+          "sparklineColor": "#006d99",
+          "sparklineFillAreaColor": "#006d99",
+          "sparklineLineWidth": 1,
+          "sparklineRepresentation": "circle",
+          "sparklineUseDataPoints": false,
+          "sparklineDataPointRadius": 1.5,
+          "sparklineDataPointColoringType": "single",
+          "sparklineDataPointsColor": "#F93F17",
+          "sparklineDataPointColoring": {
+            "qStringExpression": {
+              "qExpr": "='[{\"from\": -1000, \"to\": 0, \"color\": \"#ff0000\"}, {\"from\": 0, \"to\": 1000000, \"color\": \"#00ff00\"}]'"
+            }
+          },
+          "sparklineUseHighlights": true,
+          "sparklineHighlightSpotRadius": 1.5,
+          "sparklineHighlightUseLast": false,
+          "sparklineHighglightLastColor": "#F93F17",
+          "sparklineHighlightUseMax": true,
+          "sparklineHighglightMaxColor": "#3C43B7",
+          "sparklineHighlightUseMin": true,
+          "sparklineHighglightMinColor": "#F93F17",
+          "lineRangeToggle": false,
+          "lineRangeMin": 0,
+          "lineRangeMax": 10,
+          "minichartBarColor": "#006d99",
+          "minichartNegativeBarColor": "#006d99",
+          "minichartMaxBars": 50,
+          "minichartFirstBars": true,
+          "minichartBarWidth": 4,
+          "minichartBarSpacing": 1,
+          "minichartZeroAxis": true,
+          "minichartPieUsePalette": true,
+          "minichartPiePalette": "vizlib-2020",
+          "minichartPieCustomPalette": "#4477aa,#7db8da,#b6d7ea,#46c646,#f93f17,#ffcf02,#b0afae,#7b7a78,#545352",
+          "useBoxplot": false,
+          "minichartBoxIsHeightCustom": false,
+          "minichartBoxHeight": 20,
+          "minichartBoxLineColor": "#3C43B7",
+          "minichartBoxFillColor": "#006d99",
+          "minichartBoxWhiskerColor": "#3C43B7",
+          "minichartBoxMedianColor": "#3C43B7",
+          "showBorder": true,
+          "borderColor": "#F2F2F2",
+          "borderThickness": 1,
+          "Showtotal": true,
+          "totalMode": "Expr",
+          "pincolumn": false,
+          "columnPinningPosition": "pinRight",
+          "columnPinning": "noPin",
+          "actions": [],
+          "sparklineFillAreaColorPicker": {
+            "color": "#006d99",
+            "index": -1
+          },
+          "sparklineColorPicker": {
+            "color": "#006d99",
+            "index": -1
+          },
+          "minichartBarColorPicker": {
+            "color": "#006d99",
+            "index": -1
+          },
+          "minichartNegativeBarColorPicker": {
+            "color": "#006d99",
+            "index": -1
+          },
+          "minichartBoxFillColorPicker": {
+            "color": "#006d99",
+            "index": -1
+          },
+          "bulletActualColorPicker": {
+            "color": "#006d99",
+            "index": -1
+          },
+          "progressBarColorPicker": {
+            "color": "#006d99",
+            "index": -1
+          },
+          "tooltipColorPicker": {
+            "color": "#595959",
+            "index": -1
+          },
+          "cellTooltipColorPicker": {
+            "color": "#595959",
+            "index": -1
+          },
+          "iconColorPicker": {
+            "color": "#000000",
+            "index": -1
+          },
+          "textColorPicker": {
+            "color": "#595959",
+            "index": -1
+          },
+          "backgroundColorPicker": {
+            "color": "none",
+            "index": -1
+          },
+          "measureNullValueBgColorPicker": {
+            "color": "none",
+            "index": -1
+          },
+          "measureNullValueColorPicker": {
+            "color": "none",
+            "index": -1
+          },
+          "borderColorPicker": {
+            "color": "#F2F2F2",
+            "index": -1
+          }
+        },
+        "qSortBy": {
+          "qSortByState": 0,
+          "qSortByFrequency": 0,
+          "qSortByNumeric": -1,
+          "qSortByAscii": 0,
+          "qSortByLoadOrder": 1,
+          "qSortByExpression": 0,
+          "qExpression": {
+            "qv": ""
+          },
+          "qSortByGreyness": 0
+        },
+        "qAttributeExpressions": [
+          {
+            "qExpression": "='#595959'",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "='none'",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "='#006d99'",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "='#ec5656'",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "0",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "0",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "0",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "0",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "='#006d99'",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "='#898989'",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "='#F93F17'",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "='#3C43B7'",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "'#595959'",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          },
+          {
+            "qExpression": "",
+            "qLibraryId": "",
+            "qAttribute": true,
+            "qNumFormat": null,
+            "qLabel": "",
+            "qLabelExpression": ""
+          }
+        ],
+        "qAttributeDimensions": [],
+        "qCalcCond": {
+          "qv": ""
+        },
+        "qCalcCondition": {
+          "qCond": {
+            "qv": "if(GetSelectedCount(%MeasureLabel)>0 and SubStringCount('['&Concat(%MeasureName, '],[')&']', '$(=$(vMeaName(##INDEX##)))'), True(), False())"
+          },
+          "qMsg": {
+            "qv": ""
+          }
+        },
+        "qTrendLines": [],
+        "qMiniChartDef": {
+          "qDef": "",
+          "qLibraryId": "",
+          "qSortBy": {
+            "qSortByState": 0,
+            "qSortByFrequency": 0,
+            "qSortByNumeric": 0,
+            "qSortByAscii": 0,
+            "qSortByLoadOrder": 0,
+            "qSortByExpression": 0,
+            "qExpression": {
+              "qv": ""
+            },
+            "qSortByGreyness": 0
+          },
+          "qOtherTotalSpec": {
+            "qOtherMode": "OTHER_OFF",
+            "qOtherCounted": {
+              "qv": ""
+            },
+            "qOtherLimit": {
+              "qv": ""
+            },
+            "qOtherLimitMode": "OTHER_GT_LIMIT",
+            "qSuppressOther": false,
+            "qForceBadValueKeeping": true,
+            "qApplyEvenWhenPossiblyWrongResult": true,
+            "qGlobalOtherGrouping": false,
+            "qOtherCollapseInnerDimensions": false,
+            "qOtherSortMode": "OTHER_SORT_DESCENDING",
+            "qTotalMode": "TOTAL_OFF",
+            "qReferencedExpression": {
+              "qv": ""
+            }
+          },
+          "qMaxNumberPoints": -1,
+          "qAttributeExpressions": [],
+          "qNullSuppression": false
+        }
+      }

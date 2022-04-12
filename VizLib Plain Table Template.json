@@ -1,0 +1,385 @@
+{
+  "qInfo": {
+    "qId": "tfPdvyc",
+    "qType": "VizlibTable"
+  },
+  "qExtendsId": "",
+  "qMetaDef": {},
+  "qStateName": "",
+  "search": "",
+  "templates": {
+    "viewTemplates": false,
+    "saveTemplate": false,
+    "isDefaultTemplateApplied": true,
+    "attachSampleData": false
+  },
+  "qHyperCubeDef": {
+    "qStateName": "",
+    "qDimensions": [
+##DIMENSTIONS##
+	],
+    "qMeasures": [
+##MEASURES##
+    ],
+    "qInterColumnSortOrder": [
+##qInterColumnSortOrder##
+    ],
+    "qSuppressZero": false,
+    "qSuppressMissing": false,
+    "qInitialDataFetch": [
+      {
+        "qLeft": 0,
+        "qTop": 0,
+        "qWidth": 0,
+        "qHeight": 0
+      }
+    ],
+    "qReductionMode": "N",
+    "qMode": "S",
+    "qPseudoDimPos": -1,
+    "qNoOfLeftDims": -1,
+    "qAlwaysFullyExpanded": false,
+    "qMaxStackedCells": 5000,
+    "qPopulateMissing": false,
+    "qShowTotalsAbove": false,
+    "qIndentMode": false,
+    "qCalcCond": {
+      "qv": "if(GetSelectedCount(%DimensionLabel)>0 or GetSelectedCount(%MeasureLabel)>0, True(), False())"
+    },
+    "qSortbyYValue": 0,
+    "qTitle": {
+      "qv": ""
+    },
+    "qCalcCondition": {
+      "qCond": {
+        "qv": "if(GetSelectedCount(%DimensionLabel)>0 or GetSelectedCount(%MeasureLabel)>0, True(), False())"
+      },
+      "qMsg": {
+        "qv": "Please select at least one dimension and/or one measure"
+      }
+    },
+    "qColumnOrder": [
+##qColumnOrder##
+    ],
+    "qExpansionState": [],
+    "qDynamicScript": [],
+    "columnWidths": [
+##columnWidths##
+    ],
+    "qLayoutExclude": {
+      "qHyperCubeDef": {
+        "qStateName": "",
+        "qDimensions": [],
+        "qMeasures": [],
+        "qInterColumnSortOrder": [],
+        "qSuppressZero": false,
+        "qSuppressMissing": false,
+        "qInitialDataFetch": [],
+        "qReductionMode": "N",
+        "qMode": "S",
+        "qPseudoDimPos": -1,
+        "qNoOfLeftDims": -1,
+        "qAlwaysFullyExpanded": false,
+        "qMaxStackedCells": 5000,
+        "qPopulateMissing": false,
+        "qShowTotalsAbove": false,
+        "qIndentMode": false,
+        "qCalcCond": {
+          "qv": ""
+        },
+        "qSortbyYValue": 0,
+        "qTitle": {
+          "qv": ""
+        },
+        "qCalcCondition": {
+          "qCond": {
+            "qv": ""
+          },
+          "qMsg": {
+            "qv": ""
+          }
+        },
+        "qColumnOrder": [],
+        "qExpansionState": [],
+        "qDynamicScript": []
+      }
+    }
+  },
+  "showTitles": true,
+  "title": {
+    "qStringExpression": {
+      "qExpr": "=FieldValue('%DimensionName', 1)"
+    }
+  },
+  "subtitle": "",
+  "footnote": "",
+  "disableNavMenu": false,
+  "showDetails": false,
+  "masterColorMinichart": "#006d99",
+  "masterColorProgressBar": "#006d99",
+  "masterColorFont": "",
+  "props": {
+    "showHeader": true,
+    "header": {
+      "fontColor": "#ffffff",
+      "fontsizeslider": 13,
+      "fontsize": 13,
+      "fontfamily": "\"QlikView Sans\", sans-serif",
+      "customfontfamily": "<Type in your Font Name>",
+      "fontStyle": "bold",
+      "dropshadow": false,
+      "textalignment": "left",
+      "headerBackgroundColor": "#006d99",
+      "showBorder": true,
+      "borderStyle": "solid",
+      "borderColor": "#F2F2F2",
+      "borderSize": 1,
+      "borderSizeSlider": 1,
+      "borderSelector": "",
+      "borderImportant": false,
+      "fontColorPicker": {
+        "color": "#ffffff",
+        "index": 1
+      },
+      "headerBackgroundColorPicker": {
+        "color": "#006d99",
+        "index": -1
+      },
+      "borderColorPicker": {
+        "color": "#F2F2F2",
+        "index": -1
+      },
+      "borderleft": false,
+      "borderright": false,
+      "bordermiddle": false,
+      "bordertop": false,
+      "borderbottom": false
+    },
+    "rows": {
+      "useAutoHeight": true,
+      "height": 30,
+      "fontsize": 13,
+      "fontsizeslider": 13,
+      "fontfamily": "\"QlikView Sans\", sans-serif",
+      "customfontfamily": "<Type in your Font Name>",
+      "fontstyle": "",
+      "dropshadow": false,
+      "useStripes": true,
+      "rowsBackgroundColor": "#none",
+      "rowsStripBackground1Color": "#none",
+      "rowsStripBackground2Color": "#e5f4f4",
+      "showBorder": true,
+      "borderStyle": "solid",
+      "borderColor": "#F2F2F2",
+      "borderSize": 1,
+      "borderSizeSlider": 1,
+      "rowsBackgroundColorPicker": {
+        "color": "#none",
+        "index": -1
+      },
+      "borderColorPicker": {
+        "color": "#F2F2F2",
+        "index": -1
+      },
+      "rowsStripBackground1ColorPicker": {
+        "color": "#none",
+        "index": -1
+      },
+      "rowsStripBackground2ColorPicker": {
+        "color": "#e5f4f4",
+        "index": -1
+      }
+    },
+    "totals": {
+      "showTotals": false,
+      "useAutoHeight": false,
+      "height": 30,
+      "fontsize": 13,
+      "fontsizeslider": 13,
+      "totalsLabel": "Totals",
+      "totalsFontColor": "#808080",
+      "totalsBackgroundColor": "#none",
+      "position": "top",
+      "showBorder": true,
+      "borderStyle": "solid",
+      "borderColor": "#F2F2F2",
+      "borderSize": 1,
+      "borderSizeSlider": 1,
+      "borderSelector": "",
+      "borderImportant": false,
+      "dynamicPosition": false,
+      "totalsFontColorPicker": {
+        "color": "#808080",
+        "index": -1
+      },
+      "totalsBackgroundColorPicker": {
+        "color": "#none",
+        "index": -1
+      },
+      "borderColorPicker": {
+        "color": "#F2F2F2",
+        "index": -1
+      },
+      "borderleft": false,
+      "borderright": false,
+      "bordermiddle": false,
+      "bordertop": false,
+      "borderbottom": false
+    },
+    "mergeCells": false,
+    "sizetodata": true,
+    "splitAvailableSize": true,
+    "minColumnWidth": 125,
+    "pagination": {
+      "moreDataButtonText": "Show more data...",
+      "moreDataButtonPosition": 0,
+      "pagesize": 100
+    },
+    "nullCellBackgroundColor": "#e9e9e9",
+    "nullsymbol": "-",
+    "borderSettings": {
+      "showBorder": false,
+      "borderSelector": "",
+      "borderSize": 1,
+      "borderSizeSlider": 1,
+      "borderColor": "#F2F2F2",
+      "borderStyle": "solid",
+      "borderleft": false,
+      "borderright": false,
+      "bordertop": false,
+      "borderbottom": false,
+      "borderColorPicker": {
+        "color": "#F2F2F2",
+        "index": -1
+      }
+    },
+    "icons": {
+      "showmaximize": true,
+      "showsnapshot": true,
+      "showExport": false
+    },
+    "alternateState": "",
+    "about": "",
+    "nullCellBackgroundColorPicker": {
+      "color": "='#e9e9e9'",
+      "index": -1
+    }
+  },
+  "highlightrows": true,
+  "rowhighlight_bgcolor": "#696969",
+  "rowhighlight_color": "#FFFFFF",
+  "highlightcolumns": true,
+  "exportFilename": "VizlibTable",
+  "presentation": {
+    "showToolTips": true,
+    "tooltipType": "standard",
+    "showTooltipDesigner": false,
+    "tooltipDesignerMasterItem": "",
+    "tooltipDesignerWidth": "290",
+    "tooltipDesignerWidthSlider": 290,
+    "tooltipDesignerHeight": "190",
+    "tooltipDesignerHeightSlider": 190,
+    "tooltipDelay": 300
+  },
+  "allowselections": true,
+  "isMeasureSelectionAllowed": true,
+  "multiselect": true,
+  "dragselect": "false",
+  "colresizing": "true",
+  "interactivesorting": true,
+  "searchenabled": true,
+  "pinningEnabled": true,
+  "columnReorderingEnabled": true,
+  "exportAsText": true,
+  "exportSelectionsTitles": true,
+  "as": {
+    "showASIcon": true
+  },
+  "visualization": "VizlibTable",
+  "version": 1,
+  "extensionMeta": {
+    "translationKey": "",
+    "icon": "table",
+    "iconChar": "puzzle",
+    "isLibraryItem": true,
+    "visible": true,
+    "name": " Vizlib Table v3.16.3",
+    "description": "Classic Table which includes majority of QlikView functionality with extended formatting options.",
+    "template": "VizlibTable",
+    "iconPath": "M14.5,9 L13,9 L13,3.3 C13,3.1 12.9,3 12.7,3 L8,3 L8,1.5 C8,0.7 7.3,0 6.5,0 C5.7,0 5,0.7 5,1.5 L5,3 L0.3,3 C0.1,3 0,3.1 0,3.3 L0,9 L1.5,9 C2.3,9 3,9.7 3,10.5 C3,11.3 2.3,12 1.5,12 L0,12 L0,15.7 C0,15.9 0.1,16 0.3,16 L5,16 L5,14.5 C5,13.7 5.7,13 6.5,13 C7.3,13 8,13.7 8,14.5 L8,16 L12.7,16 C12.9,16 13,15.9 13,15.7 L13,12 L14.5,12 C15.3,12 16,11.3 16,10.5 C16,9.7 15.3,9 14.5,9 Z",
+    "isThirdParty": true,
+    "type": "visualization",
+    "preview": "VizlibTable.png",
+    "version": "3.16.3",
+    "bundle": {
+      "id": "vizlib-bundle",
+      "name": "Vizlib Library",
+      "description": "Vizlib is an advanced extension library for Qlik Sense offering a better way to communicate data by leveraging vizualisations, tables and control components. ........................................................... www.vizlib.com"
+    },
+    "author": "Ralf Becher & Vizlib ltd.",
+    "homepage": "Vizlib.com",
+    "email": "support@vizlib.com",
+    "keywords": "qlik-sense, visualization",
+    "license": "2017 © Vizlib Ltd. - All rights reserved.",
+    "tc": "http://www.vizlib.com/termsandconditions/",
+    "repository": "",
+    "dependencies": {
+      "qlik-sense": ">=3.0.x"
+    },
+    "previewIconURL": "https://qlik-test.apps.partnersgroup.net/extensions/VizlibTable/VizlibTable.png"
+  },
+  "qLayoutExclude": {
+    "disabled": {
+      "qExtendsId": "",
+      "isDefaultTemplateApplied": true,
+      "isVizlibContextMenuEnabled": false,
+      "rowhighlight_bgcolorpicker": {
+        "color": "#657dbc",
+        "index": -1
+      },
+      "rowhighlight_colorpicker": {
+        "color": "#FFFFFF",
+        "index": -1
+      },
+      "header": {
+        "showBorder": true
+      },
+      "masterColorMinichartColorPicker": {
+        "color": "#787878",
+        "index": -1
+      },
+      "masterColorProgressBarColorPicker": {
+        "color": "#787878",
+        "index": -1
+      },
+      "masterColorFontColorPicker": {
+        "color": "#595959",
+        "index": -1
+      }
+    },
+    "quarantine": {}
+  },
+  "rowhighlight_bgcolorpicker": {
+    "color": "#696969",
+    "index": -1
+  },
+  "rowhighlight_colorpicker": {
+    "color": "#FFFFFF",
+    "index": -1
+  },
+  "header": {
+    "showBorder": true
+  },
+  "masterColorMinichartColorPicker": {
+    "color": "#006d99",
+    "index": -1
+  },
+  "masterColorProgressBarColorPicker": {
+    "color": "#006d99",
+    "index": -1
+  },
+  "masterColorFontColorPicker": {
+    "color": "#none",
+    "index": -1
+  }
+}
