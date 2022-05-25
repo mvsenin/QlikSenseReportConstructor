@@ -1,22 +1,39 @@
-1. fill report constructor data
-	- dimensions: %DimensionName, %DimensionLabel
-	- measures: %MeasureName, %MeasureLabel, %MeasureExpression
-2. generate and copy jsons for the following Qlik Sense objects:
+0. Start from "Qlik Sense Report Constructor.xlsm" file:
+	- Select "Chart type" on the "Config" tab
+	- Generate content for the Dimensions & Measures tabs
+		- you can build plain table in the destination app with two dimensions: $Table, $Field,
+		  and download the list of the fields
+		- then, use the fields for discription of the dimensions and measures
+	- Once ready, run the ProcessReportConstructorData procedure (Ctrl+F11 or other way)
+
+* Note: it's recommended to clone the "Qlik Sense Report Constructor" folder for each project/app individually
+
+1. Adopt the "Report Constructor" script from the "tst.constructor.qvf" app to your app content
+	- dimension table (_Dimensions):
+		%DimensionName, %DimensionLabel
+	- measure table (_Measures):
+		%MeasureName, %MeasureLabel, %MeasureExpression
+	- field groups table (_FieldGroups):
+		%FieldGroup
+
+2. generate and copy JSON for the following Qlik Sense objects:
 	- VizLib plain table
 	- Qlik Sense plain table
+
 3. open you app and add "/options/developer" to the very end of the URLs
 	- add Qlik Sense objects:
 		- filter with %DimensionLabel field
 		- filter with %MeasureLabel field
+		- filter with %FieldGroup field
 		- VizLib plain table
 		- Qlik Sense plain table
 	For VizLib plain table
 		- call context menu Developer > Properties of 
-		- paste copied properties to the text box
+		- paste copied properties to the corresponding text box
 		- press Close
 	For Qlik Sense plain table
-		- call context menu Developer > Properties and Layout
-		- paste copied properties and layout to the corresponding text boxes
+		- call context menu Developer > Properties
+		- paste copied properties to the corresponding text box
 		- press Close
 4. now your table should show dimensions and measures according to selections made in the filters added on the step 3
 
