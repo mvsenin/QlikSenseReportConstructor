@@ -3,14 +3,21 @@
 	- measures: %MeasureName, %MeasureLabel, %MeasureExpression
 2. generate and copy jsons for the following Qlik Sense objects:
 	- VizLib plain table
+	- Qlik Sense plain table
 3. open you app and add "/options/developer" to the very end of the URLs
 	- add Qlik Sense objects:
-		- fileter with %DimensionLabel field
+		- filter with %DimensionLabel field
 		- filter with %MeasureLabel field
 		- VizLib plain table
-	- call context menu Developer > Properties of the VizLib plain table
-	- paste copied properties to the text box
-	- press Close
+		- Qlik Sense plain table
+	For VizLib plain table
+		- call context menu Developer > Properties of 
+		- paste copied properties to the text box
+		- press Close
+	For Qlik Sense plain table
+		- call context menu Developer > Properties and Layout
+		- paste copied properties and layout to the corresponding text boxes
+		- press Close
 4. now your table should show dimensions and measures according to selections made in the filters added on the step 3
 
 Notes:
