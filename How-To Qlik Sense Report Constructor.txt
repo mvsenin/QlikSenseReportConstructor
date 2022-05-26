@@ -1,14 +1,54 @@
+/*******************************************************************************
+Qlik Sense Report Constructior
+/*******************************************************************************
+
+Version: 0.2
+AUthor: mvsenin
+Created: 2022-02-28
+Modified: 2022-05-26
+Description:
+The automation tool allows generating the JSON content of the Qlik and VizLib
+plain tables with the configured set of the dimensions and measures.
+
+/*******************************************************************************
+Instructions
+/*******************************************************************************
+
 0. Start from "Qlik Sense Report Constructor.xlsm" file:
 	- Select "Chart type" on the "Config" tab
 	- Generate content for the Dimensions & Measures tabs
-		- you can build plain table in the destination app with two dimensions: $Table, $Field,
-		  and download the list of the fields
-		- then, use the fields for discription of the dimensions and measures
-	- Once ready, run the ProcessReportConstructorData procedure (Ctrl+F11 or other way)
+		- you can build plain table in the destination app with two dimensions:
+		  $Table, $Field, and download the list of the field names for that
+		- then, use the fields for creation of the dimensions and measures
+		- For dimensions:
+			%DimensionName - exact field name in the data model
+			%DimensionLabel - column title in the table
+			%FieldGroup - field group name, its selection allows showing a group
+			              of the corresponding fields
+			%AlwaysVisible - 1 = field is always visibile, or its visibility
+			                 depends on the use selection otherwise
+		- For measures:
+			%MeasureName - measure name, not necessarily exact field name
+			               in the data model, but it MUST be unique among all
+						   the measures
+			%MeasureLabel - column title in the table
+			%MeasureExpression - measure expression
+			%FieldGroup - field group name, its selection allows showing a group
+			              of the corresponding fields
+			%AlwaysVisible - 1 = field is always visibile, or its visibility
+			                 depends on the use selection otherwise
+	- Once ready, run the ProcessReportConstructorData procedure (Alt+F11 or
+	  other way)
 
-* Note: it's recommended to clone the "Qlik Sense Report Constructor" folder for each project/app individually
+* Note:
+	- It's recommended to clone the "Qlik Sense Report Constructor" folder for
+	  each project/app individually
+	- Order of the fields in the tables only depends on the order in
+	  the Excel-file
+	- %FieldGroup and %AlwaysVisible are not supported as of 2022-05-26
 
-1. Adopt the "Report Constructor" script from the "tst.constructor.qvf" app to your app content
+1. Adopt the "Report Constructor" Qlik script from the "tst.constructor.qvf"
+   app (its sample is also provide below) to your app content:
 	- dimension table (_Dimensions):
 		%DimensionName, %DimensionLabel
 	- measure table (_Measures):
@@ -16,41 +56,100 @@
 	- field groups table (_FieldGroups):
 		%FieldGroup
 
-2. generate and copy JSON for the following Qlik Sense objects:
-	- VizLib plain table
-	- Qlik Sense plain table
+* Note:
+	- You can load the date from the Excel-file you prepared on the Step #0
 
-3. open you app and add "/options/developer" to the very end of the URLs
-	- add Qlik Sense objects:
+2. Copy the generated JSON content witht the table properties to the buffer
+   (Ctrl+A + Ctrl+C) for the following Qlik Sense objects from the following
+   files created in the same folder with the Excel-file:
+	- VizLib plain table - "VizLib Plain Table.json"
+	- Qlik Sense plain table - "Qlik Plain Table Properties.json" file
+
+3. Open your destination app and add "/options/developer" to the very end of
+   its URL
+	- Add Qlik Sense objects:
 		- filter with %DimensionLabel field
 		- filter with %MeasureLabel field
-		- filter with %FieldGroup field
+		- filter with %FieldGroup field (* not supported for VizLib yet)
 		- VizLib plain table
 		- Qlik Sense plain table
 	For VizLib plain table
-		- call context menu Developer > Properties of 
+		- call context menu Developer > Properties
 		- paste copied properties to the corresponding text box
 		- press Close
 	For Qlik Sense plain table
 		- call context menu Developer > Properties
 		- paste copied properties to the corresponding text box
 		- press Close
-4. now your table should show dimensions and measures according to selections made in the filters added on the step 3
 
-Notes:
-- properties generation logic should be checked against other object types and might need changes
+4. Now your table should show dimensions and measures according to selections
+   made in the filters added on the step #3
 
-- - -
+* Note:
+	- Properties generation logic should be checked against other object types
+	  and might need changes
 
-%DimensionName	%DimensionLabel
-DealID	Deal ID
-Name	Deal Name
-DealTeam	Deal Team
-DealType	Deal Type
-Status	Satus
-Due	Due Date
-Region	Region
+/*******************************************************************************
+Sample "Report Constructor" Qlik script
+/******************************************************************************/
+
+// Variables with parameters in order to get field names and titles/labels
+// To get a filed name and label from any table by sequential numbers of table ($1) and field ($2)
+Set vFieldName = '[' & Only({<$Table={$1}, $FieldNo={$2}>} $Field) & ']';
+Set vFieldLabel = Replace(Only({<$Table={$1}, $FieldNo={$2}>} $Field), '$1.', '');
+
+// To get dimension names and labels by sequential dimension number
+Set vDimName = '[' & FieldValue('%DimensionName', $1) & ']';
+Set vDimLabel = FieldValue('%DimensionLabel', $1);
+
+// To get measure names, labels, and expressions by sequential measure number
+Set vMeaName = '[' & FieldValue('%MeasureName', $1) & ']';
+Set vMeaLabel = FieldValue('%MeasureLabel', $1);
+Set vMeaExpr = FieldValue('%MeasureExpression', $1);
+
+// To hide report contructor fields from selections
+Set HidePrefix = '%';
+
+/*
+Dimension list columns description:
+	- %DimensionName - shall contain presice field names that are supposed to be dimensions
+	- %DimensionLabel - shall contain dimension names that are used in column titles and filter list
+*/
+_Dimensions:
+LOAD
+    %DimensionName,
+    Dual(%DimensionLabel, RowNo()) as %DimensionLabel
+FROM [lib://<YOUR CONNECTION HERE>/Qlik Sense Report Constructor.xlsm] (ooxml, embedded labels, table is Dimensions);
+
+/*
+Measure list columns description:
+	- %MeasureName - shall contain presice field names that are supposed to be measure identifiers, not necessarily presice field names
+	- %MeasureLabel - shall contain measure names that are used in column titles and filter list
+    - %MeasureExpression - shall contain measure expressions/formulas
+*/
+_Measures:
+Load
+    %MeasureName
+    , Dual(%MeasureLabel, RowNo()) as %MeasureLabel
+    , Replace(Replace(%MeasureExpression, '<', '['), '>', ']') as %MeasureExpression
+;
+LOAD
+    %MeasureName,
+    %MeasureLabel,
+    %MeasureExpression
+FROM [lib://<YOUR CONNECTION HERE>/Qlik Sense Report Constructor.xlsm] (ooxml, embedded labels, table is Measures);
 
 
-%MeasureName	%MeasureLabel	%MeasureExpression
-DealSubtype	# subtypes	Count(DealSubtype)
+/*
+Field group column description:
+	- %FieldGroup - shall contain filed group names, which dimensions and measure are linked to on the Config tab of the Excel file
+*/
+_FieldGroups:
+Load Distinct
+	%FieldGroup
+FROM [lib://<YOUR CONNECTION HERE>/Qlik Sense Report Constructor.xlsm] (ooxml, embedded labels, table is Dimensions)
+;
+Load Distinct
+	%FieldGroup
+FROM [lib://<YOUR CONNECTION HERE>/Qlik Sense Report Constructor.xlsm] (ooxml, embedded labels, table is Measures)
+;
