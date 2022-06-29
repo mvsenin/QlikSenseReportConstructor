@@ -17,7 +17,7 @@
     "qInterColumnSortOrder": [
 ##qInterColumnSortOrder##
 	],
-    "qSuppressZero": false,
+    "qSuppressZero": ##SuppressZero##,
     "qSuppressMissing": true,
     "qInitialDataFetch": [],
     "qReductionMode": "N",
@@ -60,7 +60,7 @@
         "qMeasures": [],
         "qStateName": "",
         "qInterColumnSortOrder": [],
-        "qSuppressZero": false,
+        "qSuppressZero": ##SuppressZero##,
         "qSuppressMissing": false,
         "qInitialDataFetch": [],
         "qReductionMode": "N",
