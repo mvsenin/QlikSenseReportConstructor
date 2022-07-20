@@ -40,7 +40,7 @@
             "linkUrl": ""
           }
         },
-        "qNullSuppression": false,
+        "qNullSuppression": ##NullSuppression##,
         "qIncludeElemValue": false,
         "qOtherTotalSpec": {
           "qOtherMode": "OTHER_OFF",

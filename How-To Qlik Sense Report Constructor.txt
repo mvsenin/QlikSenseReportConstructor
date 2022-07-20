@@ -35,6 +35,8 @@ Instructions
 			              of the corresponding fields
 			%AlwaysVisible - 1 = field is always visibile, or its visibility
 			                 depends on the use selection otherwise
+			%NullSuppression - true = null values are suppressed, false = null
+							   null values are shown
 			Sorting	- is the optional column, it can be used for ordering
 			          the values
 		- For measures:

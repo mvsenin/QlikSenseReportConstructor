@@ -38,7 +38,7 @@
           "qActiveField": 0,
           "qLabelExpression": "='$(=$(vDimLabel_Sales(1)))'",
           "autoSort": true,
-          "cId": "{8EA7A1BB-7235-C18B-A5FC-AED62ECA6032}",
+          "cId": "{B8945C0B-CB16-DC6E-B1E5-8C19749A44CC}",
           "othersLabel": "Другие",
           "textAlign": {
             "auto": true,
@@ -51,7 +51,7 @@
             "linkUrl": ""
           }
         },
-        "qNullSuppression": false,
+        "qNullSuppression": true,
         "qIncludeElemValue": false,
         "qOtherTotalSpec": {
           "qOtherMode": "OTHER_OFF",
@@ -124,7 +124,7 @@
           "qActiveField": 0,
           "qLabelExpression": "='$(=$(vDimLabel_Sales(2)))'",
           "autoSort": true,
-          "cId": "{8624AD73-D65C-374D-A66D-9E85D44350BD}",
+          "cId": "{9FE3AF48-2FA0-922C-9146-5EF6422A66B5}",
           "othersLabel": "Другие",
           "textAlign": {
             "auto": true,
@@ -137,7 +137,7 @@
             "linkUrl": ""
           }
         },
-        "qNullSuppression": false,
+        "qNullSuppression": true,
         "qIncludeElemValue": false,
         "qOtherTotalSpec": {
           "qOtherMode": "OTHER_OFF",
@@ -210,7 +210,7 @@
           "qActiveField": 0,
           "qLabelExpression": "='$(=$(vDimLabel_Sales(3)))'",
           "autoSort": true,
-          "cId": "{4B6CB716-5B5C-29E4-B2F9-9E94D17B4668}",
+          "cId": "{933917E4-C64E-9961-AAED-08E6A8875641}",
           "othersLabel": "Другие",
           "textAlign": {
             "auto": true,
@@ -223,7 +223,7 @@
             "linkUrl": ""
           }
         },
-        "qNullSuppression": false,
+        "qNullSuppression": true,
         "qIncludeElemValue": false,
         "qOtherTotalSpec": {
           "qOtherMode": "OTHER_OFF",
@@ -296,7 +296,7 @@
           "qActiveField": 0,
           "qLabelExpression": "='$(=$(vDimLabel_Sales(4)))'",
           "autoSort": true,
-          "cId": "{4931D2AE-3ED7-7CD6-9562-913A83F7064B}",
+          "cId": "{4F165727-4982-EA86-8C7B-9C03125208A8}",
           "othersLabel": "Другие",
           "textAlign": {
             "auto": true,
@@ -309,7 +309,7 @@
             "linkUrl": ""
           }
         },
-        "qNullSuppression": false,
+        "qNullSuppression": true,
         "qIncludeElemValue": false,
         "qOtherTotalSpec": {
           "qOtherMode": "OTHER_OFF",
@@ -382,7 +382,7 @@
           "qActiveField": 0,
           "qLabelExpression": "='$(=$(vDimLabel_Sales(5)))'",
           "autoSort": true,
-          "cId": "{DC320263-FD9B-240C-AC57-8C8335958691}",
+          "cId": "{C13A752B-E81B-6773-9193-E174DB4A4105}",
           "othersLabel": "Другие",
           "textAlign": {
             "auto": true,
@@ -395,7 +395,7 @@
             "linkUrl": ""
           }
         },
-        "qNullSuppression": false,
+        "qNullSuppression": true,
         "qIncludeElemValue": false,
         "qOtherTotalSpec": {
           "qOtherMode": "OTHER_OFF",
@@ -468,7 +468,7 @@
           "qActiveField": 0,
           "qLabelExpression": "='$(=$(vDimLabel_Sales(6)))'",
           "autoSort": true,
-          "cId": "{83EEFD6C-F43A-05A2-8468-54C566D6BA6E}",
+          "cId": "{C4474517-3D9B-E581-A6E2-E95273F2058E}",
           "othersLabel": "Другие",
           "textAlign": {
             "auto": true,
@@ -481,7 +481,7 @@
             "linkUrl": ""
           }
         },
-        "qNullSuppression": false,
+        "qNullSuppression": true,
         "qIncludeElemValue": false,
         "qOtherTotalSpec": {
           "qOtherMode": "OTHER_OFF",
@@ -554,7 +554,7 @@
           "qActiveField": 0,
           "qLabelExpression": "='$(=$(vDimLabel_Sales(7)))'",
           "autoSort": true,
-          "cId": "{A839B7E4-AD46-04FB-A948-CD18617A76EF}",
+          "cId": "{86DCABF5-76A3-68C8-9839-7AD65428395D}",
           "othersLabel": "Другие",
           "textAlign": {
             "auto": true,
@@ -567,7 +567,7 @@
             "linkUrl": ""
           }
         },
-        "qNullSuppression": false,
+        "qNullSuppression": true,
         "qIncludeElemValue": false,
         "qOtherTotalSpec": {
           "qOtherMode": "OTHER_OFF",
@@ -638,7 +638,7 @@
           "qExpressions": [],
           "qLabelExpression": "='$(=$(vMeaLabel_Sales(1)))'",
           "autoSort": true,
-          "cId": "{98913402-688C-1615-A895-EC96B214BE5A}",
+          "cId": "{73AB9C2C-3E11-C672-831B-8837BB6EB1AB}",
           "numFormatFromTemplate": true,
           "textAlign": {
             "auto": true,
@@ -791,7 +791,7 @@
           "qExpressions": [],
           "qLabelExpression": "='$(=$(vMeaLabel_Sales(2)))'",
           "autoSort": true,
-          "cId": "{C1C739EE-A0AE-0E14-AC11-8568B75169B9}",
+          "cId": "{0664FCA6-B457-E2A5-8316-E87F3664828E}",
           "numFormatFromTemplate": true,
           "textAlign": {
             "auto": true,
