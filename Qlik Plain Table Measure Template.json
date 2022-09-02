@@ -104,7 +104,7 @@
         },
         "qCalcCondition": {
           "qCond": {
-            "qv": "if((GetSelectedCount(%MeasureLabel##REPORTNAME##)>0 and SubStringCount('['&Concat(%MeasureName##REPORTNAME##, '],[')&']', '$(=$(vMeaName##REPORTNAME##(##INDEX##)))')) or (GetSelectedCount(%FieldGroup##REPORTNAME##)>0 and SubStringCount('|'&Concat(%FieldGroup##REPORTNAME##, '|,|')&'|', '|##FIELDGROUP##|')), True(), False())"
+            "qv": "if((GetSelectedCount(%MeasureLabel##REPORTNAME##)>0 and SubStringCount('['&Concat(%MeasureName##REPORTNAME##, '],[')&']', '$(=$(vMeaName##REPORTNAME##(##INDEX##)))')) or (GetSelectedCount(%FieldGroup##REPORTNAME##)>0 and SubStringCount('|'&Concat(%FieldGroup##REPORTNAME##, '|,|')&'|', '|##FIELDGROUP##|')), True(), False()) or ##ALWAYSVISIBLE##"
           },
           "qMsg": {
             "qv": ""

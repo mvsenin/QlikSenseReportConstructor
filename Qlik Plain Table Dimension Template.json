@@ -77,7 +77,7 @@
         "qAttributeDimensions": [],
         "qCalcCondition": {
           "qCond": {
-		  "qv": "if((GetSelectedCount(%DimensionLabel##REPORTNAME##)>0 and SubStringCount('['&Concat(%DimensionName##REPORTNAME##, '],[')&']', '$(=$(vDimName##REPORTNAME##(##INDEX##)))')) or (GetSelectedCount(%FieldGroup##REPORTNAME##)>0 and SubStringCount('|'&Concat(%FieldGroup##REPORTNAME##, '|,|')&'|', '|##FIELDGROUP##|')), True(), False())"
+		  "qv": "if((GetSelectedCount(%DimensionLabel##REPORTNAME##)>0 and SubStringCount('['&Concat(%DimensionName##REPORTNAME##, '],[')&']', '$(=$(vDimName##REPORTNAME##(##INDEX##)))')) or (GetSelectedCount(%FieldGroup##REPORTNAME##)>0 and SubStringCount('|'&Concat(%FieldGroup##REPORTNAME##, '|,|')&'|', '|##FIELDGROUP##|')), True(), False()) or ##ALWAYSVISIBLE##"
           },
           "qMsg": {
             "qv": ""

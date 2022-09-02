@@ -38,7 +38,7 @@
           "qActiveField": 0,
           "qLabelExpression": "='$(=$(vDimLabel_Sales(1)))'",
           "autoSort": true,
-          "cId": "{B8945C0B-CB16-DC6E-B1E5-8C19749A44CC}",
+          "cId": "{AC6CBAB3-C14E-C334-B44B-ACB5CBD35853}",
           "othersLabel": "Другие",
           "textAlign": {
             "auto": true,
@@ -51,7 +51,7 @@
             "linkUrl": ""
           }
         },
-        "qNullSuppression": true,
+        "qNullSuppression": false,
         "qIncludeElemValue": false,
         "qOtherTotalSpec": {
           "qOtherMode": "OTHER_OFF",
@@ -88,7 +88,7 @@
         "qAttributeDimensions": [],
         "qCalcCondition": {
           "qCond": {
-		  "qv": "if((GetSelectedCount(%DimensionLabel_Sales)>0 and SubStringCount('['&Concat(%DimensionName_Sales, '],[')&']', '$(=$(vDimName_Sales(1)))')) or (GetSelectedCount(%FieldGroup_Sales)>0 and SubStringCount('|'&Concat(%FieldGroup_Sales, '|,|')&'|', '|Deal|')), True(), False())"
+		  "qv": "if((GetSelectedCount(%DimensionLabel_Sales)>0 and SubStringCount('['&Concat(%DimensionName_Sales, '],[')&']', '$(=$(vDimName_Sales(1)))')) or (GetSelectedCount(%FieldGroup_Sales)>0 and SubStringCount('|'&Concat(%FieldGroup_Sales, '|,|')&'|', '|Deal|')), True(), False()) or True()"
           },
           "qMsg": {
             "qv": ""
@@ -124,7 +124,7 @@
           "qActiveField": 0,
           "qLabelExpression": "='$(=$(vDimLabel_Sales(2)))'",
           "autoSort": true,
-          "cId": "{9FE3AF48-2FA0-922C-9146-5EF6422A66B5}",
+          "cId": "{9921ADA6-37FC-678A-8AD5-26C56B7B8341}",
           "othersLabel": "Другие",
           "textAlign": {
             "auto": true,
@@ -174,7 +174,7 @@
         "qAttributeDimensions": [],
         "qCalcCondition": {
           "qCond": {
-		  "qv": "if((GetSelectedCount(%DimensionLabel_Sales)>0 and SubStringCount('['&Concat(%DimensionName_Sales, '],[')&']', '$(=$(vDimName_Sales(2)))')) or (GetSelectedCount(%FieldGroup_Sales)>0 and SubStringCount('|'&Concat(%FieldGroup_Sales, '|,|')&'|', '|Organization|')), True(), False())"
+		  "qv": "if((GetSelectedCount(%DimensionLabel_Sales)>0 and SubStringCount('['&Concat(%DimensionName_Sales, '],[')&']', '$(=$(vDimName_Sales(2)))')) or (GetSelectedCount(%FieldGroup_Sales)>0 and SubStringCount('|'&Concat(%FieldGroup_Sales, '|,|')&'|', '|Organization|')), True(), False()) or True()"
           },
           "qMsg": {
             "qv": ""
@@ -210,7 +210,7 @@
           "qActiveField": 0,
           "qLabelExpression": "='$(=$(vDimLabel_Sales(3)))'",
           "autoSort": true,
-          "cId": "{933917E4-C64E-9961-AAED-08E6A8875641}",
+          "cId": "{F495D5C3-5177-9052-9B9E-C893E599CBAB}",
           "othersLabel": "Другие",
           "textAlign": {
             "auto": true,
@@ -260,7 +260,7 @@
         "qAttributeDimensions": [],
         "qCalcCondition": {
           "qCond": {
-		  "qv": "if((GetSelectedCount(%DimensionLabel_Sales)>0 and SubStringCount('['&Concat(%DimensionName_Sales, '],[')&']', '$(=$(vDimName_Sales(3)))')) or (GetSelectedCount(%FieldGroup_Sales)>0 and SubStringCount('|'&Concat(%FieldGroup_Sales, '|,|')&'|', '|Deal|')), True(), False())"
+		  "qv": "if((GetSelectedCount(%DimensionLabel_Sales)>0 and SubStringCount('['&Concat(%DimensionName_Sales, '],[')&']', '$(=$(vDimName_Sales(3)))')) or (GetSelectedCount(%FieldGroup_Sales)>0 and SubStringCount('|'&Concat(%FieldGroup_Sales, '|,|')&'|', '|Deal|')), True(), False()) or True()"
           },
           "qMsg": {
             "qv": ""
@@ -296,7 +296,7 @@
           "qActiveField": 0,
           "qLabelExpression": "='$(=$(vDimLabel_Sales(4)))'",
           "autoSort": true,
-          "cId": "{4F165727-4982-EA86-8C7B-9C03125208A8}",
+          "cId": "{4888465F-8970-62A2-9619-B765B31D17BB}",
           "othersLabel": "Другие",
           "textAlign": {
             "auto": true,
@@ -309,7 +309,7 @@
             "linkUrl": ""
           }
         },
-        "qNullSuppression": true,
+        "qNullSuppression": false,
         "qIncludeElemValue": false,
         "qOtherTotalSpec": {
           "qOtherMode": "OTHER_OFF",
@@ -346,7 +346,7 @@
         "qAttributeDimensions": [],
         "qCalcCondition": {
           "qCond": {
-		  "qv": "if((GetSelectedCount(%DimensionLabel_Sales)>0 and SubStringCount('['&Concat(%DimensionName_Sales, '],[')&']', '$(=$(vDimName_Sales(4)))')) or (GetSelectedCount(%FieldGroup_Sales)>0 and SubStringCount('|'&Concat(%FieldGroup_Sales, '|,|')&'|', '|Deal|')), True(), False())"
+		  "qv": "if((GetSelectedCount(%DimensionLabel_Sales)>0 and SubStringCount('['&Concat(%DimensionName_Sales, '],[')&']', '$(=$(vDimName_Sales(4)))')) or (GetSelectedCount(%FieldGroup_Sales)>0 and SubStringCount('|'&Concat(%FieldGroup_Sales, '|,|')&'|', '|Deal|')), True(), False()) or False()"
           },
           "qMsg": {
             "qv": ""
@@ -382,7 +382,7 @@
           "qActiveField": 0,
           "qLabelExpression": "='$(=$(vDimLabel_Sales(5)))'",
           "autoSort": true,
-          "cId": "{C13A752B-E81B-6773-9193-E174DB4A4105}",
+          "cId": "{C37DC675-4C88-91B4-84E5-A56533694A99}",
           "othersLabel": "Другие",
           "textAlign": {
             "auto": true,
@@ -432,7 +432,7 @@
         "qAttributeDimensions": [],
         "qCalcCondition": {
           "qCond": {
-		  "qv": "if((GetSelectedCount(%DimensionLabel_Sales)>0 and SubStringCount('['&Concat(%DimensionName_Sales, '],[')&']', '$(=$(vDimName_Sales(5)))')) or (GetSelectedCount(%FieldGroup_Sales)>0 and SubStringCount('|'&Concat(%FieldGroup_Sales, '|,|')&'|', '|Deal|')), True(), False())"
+		  "qv": "if((GetSelectedCount(%DimensionLabel_Sales)>0 and SubStringCount('['&Concat(%DimensionName_Sales, '],[')&']', '$(=$(vDimName_Sales(5)))')) or (GetSelectedCount(%FieldGroup_Sales)>0 and SubStringCount('|'&Concat(%FieldGroup_Sales, '|,|')&'|', '|Deal|')), True(), False()) or False()"
           },
           "qMsg": {
             "qv": ""
@@ -468,7 +468,7 @@
           "qActiveField": 0,
           "qLabelExpression": "='$(=$(vDimLabel_Sales(6)))'",
           "autoSort": true,
-          "cId": "{C4474517-3D9B-E581-A6E2-E95273F2058E}",
+          "cId": "{1124694D-D860-42AF-94D2-999AD16C4A6D}",
           "othersLabel": "Другие",
           "textAlign": {
             "auto": true,
@@ -518,7 +518,7 @@
         "qAttributeDimensions": [],
         "qCalcCondition": {
           "qCond": {
-		  "qv": "if((GetSelectedCount(%DimensionLabel_Sales)>0 and SubStringCount('['&Concat(%DimensionName_Sales, '],[')&']', '$(=$(vDimName_Sales(6)))')) or (GetSelectedCount(%FieldGroup_Sales)>0 and SubStringCount('|'&Concat(%FieldGroup_Sales, '|,|')&'|', '|Deal|')), True(), False())"
+		  "qv": "if((GetSelectedCount(%DimensionLabel_Sales)>0 and SubStringCount('['&Concat(%DimensionName_Sales, '],[')&']', '$(=$(vDimName_Sales(6)))')) or (GetSelectedCount(%FieldGroup_Sales)>0 and SubStringCount('|'&Concat(%FieldGroup_Sales, '|,|')&'|', '|Deal|')), True(), False()) or False()"
           },
           "qMsg": {
             "qv": ""
@@ -554,7 +554,7 @@
           "qActiveField": 0,
           "qLabelExpression": "='$(=$(vDimLabel_Sales(7)))'",
           "autoSort": true,
-          "cId": "{86DCABF5-76A3-68C8-9839-7AD65428395D}",
+          "cId": "{6D3BD3FE-D8A7-2A9D-9181-674F0A980B5F}",
           "othersLabel": "Другие",
           "textAlign": {
             "auto": true,
@@ -604,7 +604,7 @@
         "qAttributeDimensions": [],
         "qCalcCondition": {
           "qCond": {
-		  "qv": "if((GetSelectedCount(%DimensionLabel_Sales)>0 and SubStringCount('['&Concat(%DimensionName_Sales, '],[')&']', '$(=$(vDimName_Sales(7)))')) or (GetSelectedCount(%FieldGroup_Sales)>0 and SubStringCount('|'&Concat(%FieldGroup_Sales, '|,|')&'|', '|Organization|')), True(), False())"
+		  "qv": "if((GetSelectedCount(%DimensionLabel_Sales)>0 and SubStringCount('['&Concat(%DimensionName_Sales, '],[')&']', '$(=$(vDimName_Sales(7)))')) or (GetSelectedCount(%FieldGroup_Sales)>0 and SubStringCount('|'&Concat(%FieldGroup_Sales, '|,|')&'|', '|Organization|')), True(), False()) or False()"
           },
           "qMsg": {
             "qv": ""
@@ -638,7 +638,7 @@
           "qExpressions": [],
           "qLabelExpression": "='$(=$(vMeaLabel_Sales(1)))'",
           "autoSort": true,
-          "cId": "{73AB9C2C-3E11-C672-831B-8837BB6EB1AB}",
+          "cId": "{455549B4-99FE-4CC6-A772-F39A2ABC6179}",
           "numFormatFromTemplate": true,
           "textAlign": {
             "auto": true,
@@ -719,7 +719,7 @@
         },
         "qCalcCondition": {
           "qCond": {
-            "qv": "if((GetSelectedCount(%MeasureLabel_Sales)>0 and SubStringCount('['&Concat(%MeasureName_Sales, '],[')&']', '$(=$(vMeaName_Sales(1)))')) or (GetSelectedCount(%FieldGroup_Sales)>0 and SubStringCount('|'&Concat(%FieldGroup_Sales, '|,|')&'|', '|Deal|')), True(), False())"
+            "qv": "if((GetSelectedCount(%MeasureLabel_Sales)>0 and SubStringCount('['&Concat(%MeasureName_Sales, '],[')&']', '$(=$(vMeaName_Sales(1)))')) or (GetSelectedCount(%FieldGroup_Sales)>0 and SubStringCount('|'&Concat(%FieldGroup_Sales, '|,|')&'|', '|Deal|')), True(), False()) or True()"
           },
           "qMsg": {
             "qv": ""
@@ -791,7 +791,7 @@
           "qExpressions": [],
           "qLabelExpression": "='$(=$(vMeaLabel_Sales(2)))'",
           "autoSort": true,
-          "cId": "{0664FCA6-B457-E2A5-8316-E87F3664828E}",
+          "cId": "{16225F94-6717-7E43-A586-41A58D696122}",
           "numFormatFromTemplate": true,
           "textAlign": {
             "auto": true,
@@ -872,7 +872,7 @@
         },
         "qCalcCondition": {
           "qCond": {
-            "qv": "if((GetSelectedCount(%MeasureLabel_Sales)>0 and SubStringCount('['&Concat(%MeasureName_Sales, '],[')&']', '$(=$(vMeaName_Sales(2)))')) or (GetSelectedCount(%FieldGroup_Sales)>0 and SubStringCount('|'&Concat(%FieldGroup_Sales, '|,|')&'|', '|Deal|')), True(), False())"
+            "qv": "if((GetSelectedCount(%MeasureLabel_Sales)>0 and SubStringCount('['&Concat(%MeasureName_Sales, '],[')&']', '$(=$(vMeaName_Sales(2)))')) or (GetSelectedCount(%FieldGroup_Sales)>0 and SubStringCount('|'&Concat(%FieldGroup_Sales, '|,|')&'|', '|Deal|')), True(), False()) or False()"
           },
           "qMsg": {
             "qv": ""
@@ -931,7 +931,7 @@
 7,
 9
 	],
-    "qSuppressZero": false,
+    "qSuppressZero": true,
     "qSuppressMissing": true,
     "qInitialDataFetch": [],
     "qReductionMode": "N",
@@ -996,7 +996,7 @@
         "qMeasures": [],
         "qStateName": "",
         "qInterColumnSortOrder": [],
-        "qSuppressZero": false,
+        "qSuppressZero": true,
         "qSuppressMissing": false,
         "qInitialDataFetch": [],
         "qReductionMode": "N",

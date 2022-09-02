@@ -2,10 +2,10 @@
 Qlik Sense Report Constructior
 /*******************************************************************************
 
-Version: 0.3
+Version: 0.4
 Author: mvsenin
 Created: 2022-02-28
-Modified: 2022-07-14
+Modified: 2022-09-02
 Description:
 The automation tool allows generating the JSON content of the Qlik and VizLib
 plain tables with the configured set of the dimensions and measures which can be
@@ -33,10 +33,10 @@ Instructions
 			%DimensionLabel - column title in the table
 			%FieldGroup - field group name, its selection allows showing a group
 			              of the corresponding fields
-			%AlwaysVisible - 1 = field is always visibile, or its visibility
-			                 depends on the use selection otherwise
-			%NullSuppression - true = null values are suppressed, false = null
-							   null values are shown
+			%AlwaysVisible - 1 or true = field is always visibile, otherwise its
+			                 visibility depends on the use selection otherwise
+			%NullSuppression - 1 or true = null values are suppressed, otherwise
+			                   null values are shown
 			Sorting	- is the optional column, it can be used for ordering
 			          the values
 		- For measures:
@@ -47,15 +47,15 @@ Instructions
 			%MeasureExpression - measure expression
 			%FieldGroup - field group name, its selection allows showing a group
 			              of the corresponding fields
-			%AlwaysVisible - 1 = field is always visibile, or its visibility
-			                 depends on the use selection otherwise
+			%AlwaysVisible - 1 or true = field is always visibile, otherwise its
+			                 visibility depends on the use selection otherwise
 			Sorting	- is the optional column, it can be used for ordering
 			          the values
 			MeasureExpressionCore - is the optional column, it can be used as
-									a proxy expression to build the value of
-									the %MeasureExpression column
+						a proxy expression to build the value of
+						the %MeasureExpression column
 			MeasureFormat - is the optional column, it can be used as a proxy
-			                for specifying the measure format to build the value
+							for specifying the measure format to build the value
 							of the %MeasureExpression column with the formating
 							functions, e.g. Num()
 
