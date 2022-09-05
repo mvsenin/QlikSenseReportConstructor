@@ -2,7 +2,7 @@
 Qlik Sense Report Constructior
 /*******************************************************************************
 
-Version: 0.4
+Version: 0.6
 Author: mvsenin
 Created: 2022-02-28
 Modified: 2022-09-05
@@ -214,7 +214,7 @@ Sub CreateReportConstructorData(sCreateReportConstructorData_ReportName)
         	as %MeasureName$(sCreateReportConstructorData_ReportName)
         , Dual(%MeasureLabel, RowNo())
         	as %MeasureLabel$(sCreateReportConstructorData_ReportName)
-	, %MeasureExpression
+        , %MeasureExpression
         	as %MeasureExpression$(sCreateReportConstructorData_ReportName)
     ;
     Load * Inline [
