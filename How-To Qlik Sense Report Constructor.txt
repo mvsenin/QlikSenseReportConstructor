@@ -43,7 +43,9 @@ Instructions
 			%MeasureName - measure name, not necessarily exact field name
 			               in the data model, but it MUST be unique among all
 						   the measures
-			%MeasureLabel - column title in the table
+			%MeasureLabel - column title in the table, not shown in case it's
+			                empty, measures with empty titles can be used for
+							expressions only
 			%MeasureExpression - measure expression
 			%FieldGroup - field group name, its selection allows showing a group
 			              of the corresponding fields
@@ -106,7 +108,8 @@ Notes:
    its URL:
 	- Add Qlik Sense objects as per your need:
 		- filter with %DimensionLabel* field
-		- filter with %MeasureLabel* field
+		- filter with %MeasureLabel* field (measues with empty titles ain't
+		  shown!)
 		- filter with %FieldGroup* field (is not supported for VizLib yet)
 		- VizLib plain table
 		- Qlik Sense plain table
@@ -173,6 +176,8 @@ Sub CreateReportConstructorData(sCreateReportConstructorData_ReportName)
     	FieldValue('%MeasureLabel$(sCreateReportConstructorData_ReportName)', $1);
     Set vMeaExpr$(sCreateReportConstructorData_ReportName) =
     	FieldValue('%MeasureExpression$(sCreateReportConstructorData_ReportName)', $1);
+    Set vMeaCore$(sCreateReportConstructorData_ReportName) =
+    	FieldValue('%MeasureExpressionCore$(sCreateReportConstructorData_ReportName)', $1);
 
     /*
     Dimension list columns description:

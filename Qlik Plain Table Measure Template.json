@@ -21,7 +21,7 @@
           "qReverseSort": false,
           "qActiveExpression": 0,
           "qExpressions": [],
-          "qLabelExpression": "='$(=$(vMeaLabel##REPORTNAME##(##INDEX##)))'",
+          "qLabelExpression": "='$(=$(vMeaLabel##REPORTNAME##(##LABELINDEX##)))'",
           "autoSort": true,
           "cId": "##cId##",
           "numFormatFromTemplate": true,
@@ -104,7 +104,7 @@
         },
         "qCalcCondition": {
           "qCond": {
-            "qv": "if((GetSelectedCount(%MeasureLabel##REPORTNAME##)>0 and SubStringCount('['&Concat(%MeasureName##REPORTNAME##, '],[')&']', '$(=$(vMeaName##REPORTNAME##(##INDEX##)))')) or (GetSelectedCount(%FieldGroup##REPORTNAME##)>0 and SubStringCount('|'&Concat(%FieldGroup##REPORTNAME##, '|,|')&'|', '|##FIELDGROUP##|')), True(), False()) or ##ALWAYSVISIBLE##"
+            "qv": "if((GetSelectedCount(%MeasureLabel##REPORTNAME##)>0 and SubStringCount('['&Concat(%MeasureLabel##REPORTNAME##, '],[')&']', '$(=$(vMeaLabel##REPORTNAME##(##LABELINDEX##)))')) or (GetSelectedCount(%FieldGroup##REPORTNAME##)>0 and SubStringCount('|'&Concat(%FieldGroup##REPORTNAME##, '|,|')&'|', '|##FIELDGROUP##|')), True(), False())"
           },
           "qMsg": {
             "qv": ""
